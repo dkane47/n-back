@@ -1,0 +1,95 @@
+/* ---------- Base reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f5f6f7;
+  color: #222;
+}
+
+#root {
+  height: 100%;
+}
+
+/* ---------- App layout ---------- */
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ---------- Screen container ---------- */
+.screen {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+  max-width: 420px;
+  width: 90%;
+}
+
+/* ---------- Headings ---------- */
+h1,
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ---------- Stimulus ---------- */
+.stimulus {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #111;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  appearance: none;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #222;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  border-color: #bbb;
+}
+
+button:active {
+  background-color: #ddd;
+}
+
+button:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  border-color: #ddd;
+  cursor: default;
+}
+
+/* ---------- Small helper text ---------- */
+.small-text,
+p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
