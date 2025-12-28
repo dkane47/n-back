@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 
 function generateSequence(nBack) {
-  const TOTAL_TRIALS = 10;
+  const TOTAL_TRIALS = 12;
   const TOTAL_MATCHES = 5;
   const length = nBack + TOTAL_TRIALS;
 
@@ -120,7 +120,7 @@ function App() {
 
         return nextIndex;
       });
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, [screen, sequence]);
@@ -144,7 +144,8 @@ function App() {
 
           <p>
             Click <strong>Match</strong> only if the current number is the same
-            as the number from <strong>N steps earlier</strong>.
+            as the number from <strong>N steps earlier</strong>. 
+            For instance, if you are playing 5-Back, click on a number if it is the same as the number from 5 steps earlier. 
             If it is not a match, do nothing.
           </p>
 
