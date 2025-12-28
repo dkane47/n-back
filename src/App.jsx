@@ -139,7 +139,7 @@ function App() {
           <h1>N-Back Trainer</h1>
           <p>
             You will see a sequence of single digits appear one at a time.
-            Each number stays on the screen for 2 seconds.
+            Each number stays on the screen for 1 second.
           </p>
 
           <p>
