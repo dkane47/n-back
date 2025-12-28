@@ -144,7 +144,7 @@ function App() {
 
           <p>
             Click <strong>Match</strong> only if the current number is the same
-            as the number from <strong>{nBack ?? "N"} steps earlier</strong>.
+            as the number from <strong>N steps earlier</strong>.
             If it is not a match, do nothing.
           </p>
 
@@ -166,6 +166,14 @@ function App() {
             }}
           >
             Start 5-Back
+          </button>
+
+          <button
+            onClick={() => {
+              startGame(8);
+            }}
+          >
+            Start 8-Back
           </button>
         </div>
       )}
