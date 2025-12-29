@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 
 function generateSequence(nBack) {
-  const TOTAL_TRIALS = 12;
+  const TOTAL_TRIALS = 14;
   const TOTAL_MATCHES = 5;
   const length = nBack + TOTAL_TRIALS;
 
@@ -13,7 +13,7 @@ function generateSequence(nBack) {
   // Decide which indices are true matches
   let matchesPlaced = 0;
 
-  for (let i = nBack; i < length; i++) {
+  for (let i = nBack + 1; i < length; i++) {
     const remainingSlots = length - i;
     const remainingMatches = TOTAL_MATCHES - matchesPlaced;
 
