@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 
 function generateSequence(nBack) {
-  const TOTAL_TRIALS = 14;
+  const TOTAL_TRIALS = 15;
   const TOTAL_MATCHES = 5;
   const length = nBack + TOTAL_TRIALS;
 
@@ -68,6 +68,7 @@ function App() {
 
   // Game state
   const totalTrials = 10;
+  const intervalTime = 1500;
   const [sequence, setSequence] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [correctClicks, setCorrectClicks] = useState(0);
@@ -120,7 +121,7 @@ function App() {
 
         return nextIndex;
       });
-    }, 1000);
+    }, intervalTime);
 
     return () => clearInterval(intervalId);
   }, [screen, sequence]);
